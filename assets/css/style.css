@@ -96,12 +96,14 @@ button, input, textarea, select {
 }
 
 .btn-primary {
-  background: var(--navy);
-  color: var(--white);
+  background: #f4efe8;
+  color: var(--navy);
+  border-color: rgba(20, 36, 56, 0.12);
+  box-shadow: 0 12px 26px rgba(20, 36, 56, 0.12);
 }
 
 .btn-primary:hover {
-  background: var(--navy-deep);
+  background: #ffffff;
   transform: translateY(-1px);
 }
 
@@ -273,6 +275,20 @@ button, input, textarea, select {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  align-items: center;
+}
+
+.hero .btn-primary {
+  background: #f3efe8;
+  color: var(--navy);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.hero .btn-secondary {
+  background: rgba(255,255,255,0.08);
+  color: var(--white);
+  border-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
 }
 
 .hero-panel {
@@ -478,7 +494,7 @@ button, input, textarea, select {
   box-shadow: var(--shadow);
 }
 
-.about-image::before {
+/* .about-image::before {
   content: "";
   position: absolute;
   inset: 30px auto auto 30px;
@@ -489,7 +505,7 @@ button, input, textarea, select {
   backdrop-filter: blur(4px);
   display: grid;
   place-items: center;
-}
+} */
 
 .about-image .quote {
   position: absolute;
