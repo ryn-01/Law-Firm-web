@@ -1,15 +1,15 @@
 :root {
-  --navy: #142438;
-  --navy-deep: #0d1b2a;
-  --charcoal: #22272d;
-  --gold: #b49a70;
-  --gold-soft: #d9cab0;
-  --white: #f8f7f4;
-  --mist: #eef1f4;
-  --stone: #c9cfd6;
-  --text: #27313b;
-  --line: rgba(20, 36, 56, 0.12);
-  --shadow: 0 20px 45px rgba(20, 36, 56, 0.08);
+  --navy: #203449;
+  --navy-deep: #152635;
+  --charcoal: #282d32;
+  --gold: #806747;
+  --gold-soft: #d8c8a8;
+  --white: #f7f5f0;
+  --mist: #eceff1;
+  --stone: #c8c3b9;
+  --text: #2a343c;
+  --line: rgba(32, 52, 73, 0.12);
+  --shadow: 0 16px 36px rgba(21, 38, 53, 0.07);
   --radius: 20px;
   --container: 1320px;
 }
@@ -77,7 +77,7 @@ button, input, textarea, select {
 
 .section-header p {
   margin: 0;
-  color: rgba(39, 49, 59, 0.78);
+  color: rgba(42, 52, 60, 0.78);
   font-size: 1.05rem;
 }
 
@@ -96,41 +96,40 @@ button, input, textarea, select {
 }
 
 .btn-primary {
-  background: #f4efe8;
-  color: var(--navy);
-  border-color: rgba(20, 36, 56, 0.12);
-  box-shadow: 0 12px 26px rgba(20, 36, 56, 0.12);
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
 }
 
 .btn-primary:hover {
-  background: #ffffff;
+  background: var(--navy-deep);
+  border-color: var(--navy-deep);
   transform: translateY(-1px);
 }
 
 .btn-secondary {
   background: transparent;
-  border-color: rgba(20, 36, 56, 0.18);
+  border-color: rgba(32, 52, 73, 0.18);
   color: var(--navy);
 }
 
 .btn-secondary:hover {
   border-color: var(--navy);
-  background: rgba(20, 36, 56, 0.03);
+  background: rgba(32, 52, 73, 0.03);
 }
 
 .btn-ghost {
   background: transparent;
   color: var(--navy);
-  border-color: rgba(20, 36, 56, 0.2);
+  border-color: rgba(32, 52, 73, 0.2);
 }
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(248, 247, 244, 0.88);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(20, 36, 56, 0.08);
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
 }
 
 .header-inner {
@@ -153,7 +152,8 @@ button, input, textarea, select {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: linear-gradient(145deg, var(--navy) 0%, var(--gold) 100%);
+  background: var(--navy);
+  border: 1px solid var(--gold-soft);
   color: var(--white);
   display: grid;
   place-items: center;
@@ -181,7 +181,7 @@ button, input, textarea, select {
   font-size: 0.68rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: rgba(20, 36, 56, 0.7);
+  color: rgba(32, 52, 73, 0.7);
   margin-top: 4px;
 }
 
@@ -238,7 +238,7 @@ button, input, textarea, select {
   display: none;
   width: 48px;
   height: 48px;
-  border: 1px solid rgba(20, 36, 56, 0.12);
+  border: 1px solid rgba(32, 52, 73, 0.12);
   border-radius: 50%;
   background: transparent;
   color: var(--navy);
@@ -251,7 +251,7 @@ button, input, textarea, select {
   min-height: 650px;
   display: grid;
   align-items: center;
-  background: linear-gradient(90deg, rgba(9, 17, 28, 0.72), rgba(9, 17, 28, 0.32)),
+  background: linear-gradient(90deg, rgba(21, 38, 53, 0.9) 0%, rgba(21, 38, 53, 0.76) 52%, rgba(21, 38, 53, 0.56) 100%),
     url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
 }
 
@@ -296,9 +296,15 @@ button, input, textarea, select {
 }
 
 .hero .btn-primary {
-  background: #f3efe8;
+  background: var(--gold-soft);
   color: var(--navy);
-  border-color: rgba(255,255,255,0.2);
+  border-color: var(--gold-soft);
+  box-shadow: none;
+}
+
+.hero .btn-primary:hover {
+  background: #e4d7bf;
+  border-color: #e4d7bf;
 }
 
 .hero .btn-secondary {
@@ -311,7 +317,7 @@ button, input, textarea, select {
 .hero-panel {
   margin-left: auto;
   width: min(100%, 380px);
-  background: rgba(248, 247, 244, 0.96);
+  background: rgba(247, 245, 240, 0.96);
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 22px;
   padding: 24px;
@@ -352,7 +358,7 @@ button, input, textarea, select {
 }
 
 .panel-list span {
-  color: rgba(20, 36, 56, 0.65);
+  color: rgba(32, 52, 73, 0.65);
   font-size: 0.94rem;
 }
 
@@ -392,7 +398,7 @@ button, input, textarea, select {
 }
 
 .stat-label {
-  color: rgba(20, 36, 56, 0.72);
+  color: rgba(32, 52, 73, 0.72);
   font-size: 0.94rem;
 }
 
@@ -419,7 +425,7 @@ button, input, textarea, select {
   background: #fff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  box-shadow: 0 8px 22px rgba(20,36,56,0.035);
+  box-shadow: 0 8px 22px rgba(32,52,73,0.035);
 }
 
 .feature-card,
@@ -439,7 +445,7 @@ button, input, textarea, select {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: rgba(180,154,112,0.12);
+  background: rgba(128,103,71,0.12);
   display: grid;
   place-items: center;
   margin-bottom: 18px;
@@ -464,7 +470,7 @@ button, input, textarea, select {
 .person-card p,
 .value-card p {
   margin: 0;
-  color: rgba(39,49,59,0.72);
+  color: rgba(42,52,60,0.72);
 }
 
 .link-arrow {
@@ -508,7 +514,7 @@ button, input, textarea, select {
   width: 180px;
   height: 180px;
   border-radius: 26px;
-  background: rgba(20, 36, 56, 0.6);
+  background: rgba(32, 52, 73, 0.6);
   backdrop-filter: blur(4px);
   display: grid;
   place-items: center;
@@ -518,7 +524,7 @@ button, input, textarea, select {
   position: absolute;
   left: 28px;
   bottom: 28px;
-  background: rgba(248,247,244,0.94);
+  background: rgba(247,245,240,0.94);
   border-radius: 20px;
   padding: 18px 20px;
   max-width: 300px;
@@ -534,7 +540,7 @@ button, input, textarea, select {
 
 .about-copy p {
   margin: 0 0 18px;
-  color: rgba(39,49,59,0.75);
+  color: rgba(42,52,60,0.75);
   font-size: 1.04rem;
 }
 
@@ -558,7 +564,7 @@ button, input, textarea, select {
   gap: 16px;
   align-items: flex-start;
   padding: 14px 16px;
-  background: rgba(20,36,56,0.02);
+  background: rgba(32,52,73,0.02);
   border: 1px solid var(--line);
   border-radius: 18px;
 }
@@ -569,7 +575,7 @@ button, input, textarea, select {
   margin-top: 8px;
   border-radius: 50%;
   background: var(--gold);
-  box-shadow: 0 0 0 5px rgba(180,154,112,0.18);
+  box-shadow: 0 0 0 5px rgba(128,103,71,0.18);
 }
 
 .practice-grid {
@@ -599,7 +605,7 @@ button, input, textarea, select {
   margin: 18px 0 0;
   display: grid;
   gap: 10px;
-  color: rgba(39,49,59,0.78);
+  color: rgba(42,52,60,0.78);
 }
 
 .practice-card li::before {
@@ -641,7 +647,7 @@ button, input, textarea, select {
 
 .timeline-copy p {
   margin: 0;
-  color: rgba(39,49,59,0.75);
+  color: rgba(42,52,60,0.75);
 }
 
 .insight-grid {
@@ -673,7 +679,7 @@ button, input, textarea, select {
 }
 
 .cta-band {
-  background: linear-gradient(135deg, var(--navy), #1d2d43);
+  background: var(--navy);
   color: var(--white);
   border-radius: 24px;
   padding: 36px 40px;
@@ -697,8 +703,7 @@ button, input, textarea, select {
 
 .page-hero {
   padding: 78px 0 66px;
-  background: linear-gradient(90deg, rgba(20,36,56,0.92), rgba(20,36,56,0.7)),
-    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  background: var(--navy);
 }
 
 .page-hero .container {
@@ -725,7 +730,7 @@ button, input, textarea, select {
   border: 1px solid var(--line);
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 8px 22px rgba(20, 36, 56, 0.035);
+  box-shadow: 0 8px 22px rgba(32, 52, 73, 0.035);
 }
 
 .content-panel h2 {
@@ -785,7 +790,7 @@ button, input, textarea, select {
   border: 1px solid var(--line);
   border-radius: 26px;
   overflow: hidden;
-  box-shadow: 0 12px 28px rgba(20,36,56,0.04);
+  box-shadow: 0 12px 28px rgba(32,52,73,0.04);
 }
 
 .profile-photo {
@@ -815,7 +820,7 @@ button, input, textarea, select {
 
 .profile-body p {
   margin: 18px 0;
-  color: rgba(39,49,59,0.75);
+  color: rgba(42,52,60,0.75);
 }
 
 .credentials {
@@ -869,7 +874,7 @@ button, input, textarea, select {
 
 .article-body p {
   margin: 0 0 18px;
-  color: rgba(39,49,59,0.76);
+  color: rgba(42,52,60,0.76);
 }
 
 .article-body ol {
@@ -877,7 +882,7 @@ button, input, textarea, select {
   gap: 10px;
   margin: 0 0 24px;
   padding-left: 1.35rem;
-  color: rgba(39,49,59,0.76);
+  color: rgba(42,52,60,0.76);
 }
 
 .article-body li {
@@ -889,7 +894,7 @@ button, input, textarea, select {
   border: 1px solid var(--line);
   border-radius: 20px;
   padding: 24px;
-  box-shadow: 0 8px 22px rgba(20,36,56,0.035);
+  box-shadow: 0 8px 22px rgba(32,52,73,0.035);
 }
 
 .sidebar-card h3 {
@@ -927,7 +932,7 @@ button, input, textarea, select {
 }
 
 .contact-info {
-  background: linear-gradient(180deg, #162b42, #101c2d);
+  background: var(--navy-deep);
   color: var(--white);
   border-radius: 20px;
   padding: 28px;
@@ -981,7 +986,7 @@ button, input, textarea, select {
 .field textarea,
 .field select {
   width: 100%;
-  border: 1px solid rgba(20,36,56,0.12);
+  border: 1px solid rgba(32,52,73,0.12);
   border-radius: 12px;
   background: #fff;
   padding: 14px 16px;
@@ -996,7 +1001,7 @@ button, input, textarea, select {
 .field input:focus,
 .field textarea:focus,
 .field select:focus {
-  outline: 3px solid rgba(180,154,112,0.24);
+  outline: 3px solid rgba(128,103,71,0.24);
   border-color: var(--gold);
 }
 
@@ -1027,7 +1032,7 @@ button, input, textarea, select {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  color: rgba(39,49,59,0.72);
+  color: rgba(42,52,60,0.72);
   margin-bottom: 12px;
 }
 
@@ -1037,8 +1042,9 @@ button, input, textarea, select {
 }
 
 .policy-content {
+  max-width: 900px;
   font-size: 1.02rem;
-  color: rgba(39,49,59,0.8);
+  color: rgba(42,52,60,0.8);
 }
 
 .policy-content h2,
@@ -1049,7 +1055,7 @@ button, input, textarea, select {
 
 .footer {
   padding: 60px 0 30px;
-  background: #101b2b;
+  background: var(--navy-deep);
   color: rgba(255,255,255,0.74);
 }
 
@@ -1107,7 +1113,7 @@ button, input, textarea, select {
     align-items: stretch;
     gap: 0;
     padding: 10px;
-    background: rgba(248,247,244,0.98);
+    background: rgba(247,245,240,0.98);
     border: 1px solid var(--line);
     border-radius: 18px;
     box-shadow: var(--shadow);
